@@ -1,0 +1,57 @@
+.btn-common {
+  border-radius: 0;
+  border: 1px solid var(--white);
+  padding: 18px;
+  background-color: transparent;
+  color: var(--white);
+  font-size: 1rem;
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    border-color: var(--button-hover);
+    color: var(--button-hover);
+  }
+}
+
+.Quote {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border: 1px solid var(--white);
+  padding: 40px;
+
+  &__text {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  &__author {
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+    align-self: flex-end;
+    color: var(--author-color);
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-start;
+
+    .refresh-btn {
+      @extend .btn-common;
+    }
+
+    .share-btn {
+      @extend .btn-common;
+      margin-left: 1rem;
+      text-decoration: none;
+      color: var(--white);
+
+      &:hover {
+        border-color: var(--author-color);
+        color: var(--author-color);
+      }
+    }
+  }
+}
