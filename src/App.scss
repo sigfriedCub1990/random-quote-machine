@@ -1,0 +1,29 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --white: #fff;
+  --page-background: #282c34;
+  --button-hover: #f0ff8f;
+  --author-color: #ffc0c0;
+}
+
+.App {
+  background-color: var(--page-background);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: var(--white);
+}
+
+.container {
+  max-width: 1024px;
+}
